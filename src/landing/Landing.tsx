@@ -80,7 +80,9 @@ export default function Landing() {
         <View style={[styles.body, styles.center]}>
           <View style={{ width: "80%" }}>
             <View>
-              <Text>Question {questionIndex + 1}</Text>
+              <Text style={{ fontWeight: "bold" }}>
+                Question {questionIndex + 1}
+              </Text>
               <Text>{data[questionIndex].label}</Text>
             </View>
             <View>

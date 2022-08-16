@@ -1,5 +1,6 @@
 import { Answer } from "../../../config/data";
 import { View, StyleSheet, Text } from "react-native";
+import { gray, green_light } from "../../../utils/colors";
 
 interface AnswerChoiceProps {
   answer: Answer;
@@ -12,7 +13,7 @@ export default function AnswerChoice({ answer, checked }: AnswerChoiceProps) {
       <View
         style={[
           styles.checkbox,
-          { backgroundColor: checked ? "#afa" : "#aaa" },
+          { backgroundColor: checked ? green_light : gray },
         ]}
       ></View>
       <View style={styles.label}>
