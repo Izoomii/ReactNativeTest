@@ -1,5 +1,5 @@
 import { View, Text } from "react-native";
-import { gray_light } from "../../../utils/colors";
+import { theme } from "../../../utils/colors";
 
 interface SmallBoxProps {
   text: string;
@@ -9,7 +9,7 @@ export default function SmallBox({ text, textColor }: SmallBoxProps) {
   return (
     <View
       style={{
-        backgroundColor: gray_light,
+        backgroundColor: theme["gray_light"],
         padding: 15,
         margin: 4,
         borderRadius: 5,

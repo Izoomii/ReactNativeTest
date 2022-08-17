@@ -2,7 +2,7 @@ import { StyleSheet, View, Text, TouchableOpacity, Button } from "react-native";
 import Header from "../components/Header/Header";
 import { Answer, data } from "../../config/data";
 import { useState } from "react";
-import { blue, purple } from "../../utils/colors";
+import { theme } from "../../utils/colors";
 import AnswerChoice from "../components/AnswerChoice/AnswerChoice";
 import SmallBox from "../components/SmallBox/SmallBox";
 import { useQuestionModal } from "../../store/global/modal";
@@ -60,13 +60,13 @@ export default function Landing() {
         <View style={[styles.body, styles.center]}>
           <Text style={{ fontWeight: "bold" }}>Félicitaion !</Text>
           <Text>Voici votre Score</Text>
-          <SmallBox text={`${score}/20`} textColor={purple} />
+          <SmallBox text={`${score}/20`} textColor={theme["purple"]} />
           <TouchableOpacity
             onPress={() => reset()}
             style={{
               marginVertical: 5,
               borderRadius: 100,
-              backgroundColor: blue,
+              backgroundColor: theme["blue"],
               paddingHorizontal: 15,
               paddingVertical: 8,
             }}
@@ -108,7 +108,7 @@ export default function Landing() {
             style={{
               marginVertical: 50,
               borderRadius: 100,
-              backgroundColor: blue,
+              backgroundColor: theme["blue"],
               paddingHorizontal: 100,
               paddingVertical: 10,
             }}

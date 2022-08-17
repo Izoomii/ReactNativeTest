@@ -1,7 +1,9 @@
-export const orange = "#eea25f";
-export const blue = "#03a9f4";
-export const blue_light = "#5ec8f8";
-export const gray = "#aaa";
-export const gray_light = "#cfdff3";
-export const purple = "#302ea7";
-export const green_light = "#afa";
+export const theme = {
+  orange: "#eea25f",
+  blue: "#03a9f4",
+  blue_light: "#5ec8f8",
+  gray: "#aaa",
+  gray_light: "#cfdff3",
+  purple: "#302ea7",
+  green_light: "#afa",
+};

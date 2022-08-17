@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { StyleSheet, View, Text, Image } from "react-native";
 import { useQuestionModal } from "../../../store/global/modal";
-import { blue_light, purple, orange } from "../../../utils/colors";
+import { theme } from "../../../utils/colors";
 
 import SmallBox from "../SmallBox/SmallBox";
 
@@ -64,7 +64,7 @@ export default function Header() {
           <Text>Question</Text>
           <SmallBox
             text={`${currentQuestionIndex + 1}/20`}
-            textColor={purple}
+            textColor={theme["purple"]}
           />
         </View>
         <View style={[styles.center, { width: "40%" }]}>
@@ -72,11 +72,11 @@ export default function Header() {
           <View style={{ display: "flex", flexDirection: "row" }}>
             <SmallBox
               text={`${String(Math.floor(timePassed / 60)).padStart(2, "0")}`}
-              textColor={purple}
+              textColor={theme["purple"]}
             />
             <SmallBox
               text={`${String(timePassed % 60).padStart(2, "0")}`}
-              textColor={orange}
+              textColor={theme["orange"]}
             />
           </View>
         </View>
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
   },
   userinfo: {
     elevation: 10,
-    backgroundColor: blue_light,
+    backgroundColor: theme["blue_light"],
     width: "100%",
     height: "85%",
     borderBottomLeftRadius: borderRadius,
